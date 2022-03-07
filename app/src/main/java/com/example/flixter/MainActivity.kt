@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
             ) {
                 Log.e(TAG, "onFailure $statusCode")  //Logging at error level
             }
-
             override fun onSuccess(statusCode: Int, headers: Headers?, json: JSON) {
                 Log.i(TAG, "onSuccess: JSON data $json") //Logging at info level** Meaning?
                 try{
