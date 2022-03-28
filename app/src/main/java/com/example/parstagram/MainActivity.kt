@@ -14,6 +14,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.content.FileProvider
 import com.parse.FindCallback
+import com.parse.ParseFile
 import com.parse.ParseQuery
 import com.parse.ParseUser
 import java.io.File
@@ -37,7 +38,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button_postPhoto).setOnClickListener{
             val description = findViewById<EditText>(R.id.post_description).text.toString()
             val user = ParseUser.getCurrentUser()
-            submitPost(description,user)
+            if(photoFile != null){
+                submitPost(description,user, photoFile!!)
+            }else{
+                //Can show the user!
+            }
         }
         findViewById<Button>(R.id.button_takePhoto).setOnClickListener{
             onLaunchCamera()
@@ -45,10 +50,11 @@ class MainActivity : AppCompatActivity() {
         queryPosts()
     }
 
-    fun submitPost(description: String, user: ParseUser) {
+    fun submitPost(description: String, user: ParseUser, file: File) {
         val post = Post()
         post.setDescription(description)
         post.setUser(user)
+        post.setImage(ParseFile(file))
         post.saveInBackground{exception ->
             if(exception != null){
                 Log.e(TAG, "Error while saving post")
