@@ -1,10 +1,7 @@
 # Project 2 - *Chirper*
 **Chirper** is an android app that allows a user to view their Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **11** hours spent in total
-
 ## User Stories
-
 The following **required** functionality is completed:
 
 - [x] User can **compose and post a new tweet**
@@ -37,10 +34,6 @@ Here's a walkthrough of implemented user stories:
 <img src='WalkthroughChirp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## Open-source libraries used
 
