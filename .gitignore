@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Source: https://gist.github.com/nesquena/5617544/raw/53710b374e7df3302df43b552488d876040ada3d/.gitignore
 
 # built application files
@@ -67,6 +68,8 @@ import-summary.txt
 
 apikey.properties
 =======
+=======
+>>>>>>> repo2/master
 *.iml
 .gradle
 /local.properties
@@ -82,4 +85,7 @@ apikey.properties
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master

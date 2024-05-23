@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
 <<<<<<< HEAD
+<<<<<<< HEAD
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
@@ -37,20 +38,31 @@ android {
         lintConfig rootProject.file('gradle/lint.xml')
 =======
     id 'org.jetbrains.kotlin.android'
+=======
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+>>>>>>> repo2/master
 }
 
 android {
     compileSdk 32
 
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.example.parstagram"
+=======
+        applicationId "com.example.flixter"
+>>>>>>> repo2/master
         minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
     }
 
     buildTypes {
@@ -70,6 +82,7 @@ android {
 
 dependencies {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
@@ -104,4 +117,22 @@ dependencies {
     // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 >>>>>>> repo1/master
+=======
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.codepath.libraries:asynchttpclient:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+>>>>>>> repo2/master
 }

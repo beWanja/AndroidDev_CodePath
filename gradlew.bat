@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> repo2/master
 @rem
 @rem Copyright 2015 the original author or authors.
 @rem
@@ -16,7 +19,10 @@
 @rem limitations under the License.
 @rem
 
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
@@ -33,15 +39,21 @@ set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 =======
+=======
+>>>>>>> repo2/master
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
@@ -49,10 +61,14 @@ if defined JAVA_HOME goto findJavaFromJavaHome
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
 <<<<<<< HEAD
+<<<<<<< HEAD
 if "%ERRORLEVEL%" == "0" goto init
 =======
 if "%ERRORLEVEL%" == "0" goto execute
 >>>>>>> repo1/master
+=======
+if "%ERRORLEVEL%" == "0" goto execute
+>>>>>>> repo2/master
 
 echo.
 echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
@@ -67,10 +83,14 @@ set JAVA_HOME=%JAVA_HOME:"=%
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if exist "%JAVA_EXE%" goto init
 =======
 if exist "%JAVA_EXE%" goto execute
 >>>>>>> repo1/master
+=======
+if exist "%JAVA_EXE%" goto execute
+>>>>>>> repo2/master
 
 echo.
 echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
@@ -80,6 +100,7 @@ echo location of your Java installation.
 
 goto fail
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 :init
 @rem Get command-line arguments, handling Windows variants
@@ -98,11 +119,14 @@ set CMD_LINE_ARGS=%*
 
 =======
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
 :execute
 @rem Setup the command line
 
 set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @rem Execute Gradle
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %CMD_LINE_ARGS%
@@ -111,6 +135,11 @@ set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
 @rem Execute Gradle
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %*
 >>>>>>> repo1/master
+=======
+
+@rem Execute Gradle
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %*
+>>>>>>> repo2/master
 
 :end
 @rem End local scope for the variables with windows NT shell

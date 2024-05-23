@@ -1,7 +1,10 @@
 #!/usr/bin/env sh
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> repo2/master
 #
 # Copyright 2015 the original author or authors.
 #
@@ -18,7 +21,10 @@
 # limitations under the License.
 #
 
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
 ##############################################################################
 ##
 ##  Gradle start up script for UN*X
@@ -48,10 +54,14 @@ APP_BASE_NAME=`basename "$0"`
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 <<<<<<< HEAD
+<<<<<<< HEAD
 DEFAULT_JVM_OPTS=""
 =======
 DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 >>>>>>> repo1/master
+=======
+DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+>>>>>>> repo2/master
 
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD="maximum"
@@ -90,9 +100,13 @@ esac
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> repo1/master
+=======
+
+>>>>>>> repo2/master
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
@@ -137,17 +151,23 @@ if $darwin; then
 fi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # For Cygwin, switch paths to Windows format before running java
 if $cygwin ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
 =======
+=======
+>>>>>>> repo2/master
 # For Cygwin or MSYS, switch paths to Windows format before running java
 if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
     APP_HOME=`cygpath --path --mixed "$APP_HOME"`
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
 
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
     JAVACMD=`cygpath --unix "$JAVACMD"`
 
     # We build the pattern for arguments to be converted via cygpath
@@ -174,6 +194,7 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
             eval `echo args$i`="\"$arg\""
         fi
 <<<<<<< HEAD
+<<<<<<< HEAD
         i=$((i+1))
     done
     case $i in
@@ -188,6 +209,8 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
         (8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
         (9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
 =======
+=======
+>>>>>>> repo2/master
         i=`expr $i + 1`
     done
     case $i in
@@ -201,7 +224,10 @@ if [ "$cygwin" = "true" -o "$msys" = "true" ] ; then
         7) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" ;;
         8) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" ;;
         9) set -- "$args0" "$args1" "$args2" "$args3" "$args4" "$args5" "$args6" "$args7" "$args8" ;;
+<<<<<<< HEAD
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
     esac
 fi
 
@@ -211,14 +237,19 @@ save () {
     echo " "
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 APP_ARGS=$(save "$@")
 =======
 APP_ARGS=`save "$@"`
 >>>>>>> repo1/master
+=======
+APP_ARGS=`save "$@"`
+>>>>>>> repo2/master
 
 # Collect all arguments for the java command, following the shell quoting and substitution rules
 eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # by default we should be in the correct project dir, but when run from Finder on Mac, the cwd is wrong
 if [ "$(uname)" = "Darwin" ] && [ "$HOME" = "$PWD" ]; then
@@ -227,4 +258,6 @@ fi
 
 =======
 >>>>>>> repo1/master
+=======
+>>>>>>> repo2/master
 exec "$JAVACMD" "$@"

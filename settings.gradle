@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 include ':app'
 rootProject.name = "RestClientTemplateKotlin"
 =======
+=======
+>>>>>>> repo2/master
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -14,9 +17,16 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
         maven { url 'https://jitpack.io' }
 }
 }
 rootProject.name = "Parstagram"
 include ':app'
 >>>>>>> repo1/master
+=======
+    }
+}
+rootProject.name = "Flixter"
+include ':app'
+>>>>>>> repo2/master
